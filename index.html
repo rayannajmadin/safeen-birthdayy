@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Love!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Click to Start Overlay -->
+  <div id="start-overlay">
+    <h1>عەزێت نەبێ یەک کلیک بکە بۆمان دڵە گیان </h1>
+  </div>
+
+  <!-- Autoplay Song -->
+  <audio id="background-song" loop>
+    <source src="i-will-follow-you.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Landing Page -->
+  <section id="landing" class="section hidden">
+    <h2> 🎉لەدایک بوونت پیرۆز سەفین گیانی من</h2>
+    <p>ئەم چەند لاپەڕەیەم بەتایبەت بۆتۆ دروست کردووە،کلیک بکە با دەست پێبکەین </p>
+    <button onclick="startCelebration()">یەڵا</button>
+  </section>
+
+  <!-- Love Letter -->
+  <section id="love-letter" class="section hidden">
+    <h2>سەفینی دڵم ئازیزەکەم</h2>
+    <div class="letter-content">
+      <p>
+        ❤️ سەرەتا زۆۆۆر سوپاسی خوا گیان ئەکەم کە تۆی پێ بەخشیووم لەم دنیایەیا،سوپاسی تۆیەکی باش و میهرەبان ئەکەم کەهەیت بۆ من و دنیات بۆ ڕەنگاوڕەنگ کردووم سوپاس کە هەیت کە لێرەیت ڕێک لە ناوی دڵمدا<br>دڵخۆشم  زۆر دڵخۆشم کە تۆ هی منیت و منیش هی تۆم و  هەموو چرکە ساتەکانی ژیانمان ئیتر پێکەوە بەڕێ ئەکەین 
+
+     </p>
+      <p>
+         وەرە ئەمدیو شتێکی جوانت نیشان بدەم بەم بۆنەیەوە  </p>
+    
+    </div> 
+    <button onclick="nextSection('photo-gallery')">دەی</button>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="photo-gallery" class="section hidden">
+    <h2>ئەها سێری کە چەن جوانین پێکەوە </h2>
+    <div class="gallery">
+      <img src="ema.jpg" width=" 550" height=" 750" alt="Memory 1">
+      <img src="1732257835129.jpg"  width=" 470" height=" 750"alt="Memory 2"><br><br><br>
+      <img src="Messenger_creation_FDE705EE-5E83-4E1D-AD69-52870E8C7938.jpeg"  width=" 490" height=" 750"alt="Memory 3"> 
+         <img src="IMG_20250224_135451_127.jpg"  width=" 490" height=" 750"alt="Memory 4"> 
+         <br><br>
+         <button onclick="nextSection('cake')">تۆ وەرە سوپڕایزێکم بۆت هەیە</button>
+  
+    </div>
+  </section>
+
+  <!-- Virtual Birthday Cake -->
+  <section id="cake" class="section hidden">
+    <h2>هیوایەک بخوازە </h2>
+    <div class="cake-container">
+      <img src="IMG_20250224_205557.jpg" width=" 1380" height=" 750" alt="Birthday Cake" id="cake-image">
+      <h3>تۆزێک سەیرم بکە ئینجا کلیک لە خاڵی چەناگەم بکە </h3>
+    </div>
+
+
+    <button onclick="nextSection('special-message')" class="hidden" id="next-button">ئینجا وەرە با شتێکت پێ بڵێم </button>
+  </section>
+
+  <!-- Special Message -->
+  <section id="special-message" class="section hidden">
+    <h2>❤️ئەم نامەیەم لە دڵمەوە نوسیووە بۆ دڵت  </h2>
+    <p>
+      لەدایک بوونت پیرۆز بێت ئەی بوونی من 🌻❤️،دڵخۆشم زۆر دڵخۆشم کە خودا تۆی پێ بەخشیووم چەنێک سوپازگوزاربم هێشتا کەمە چونکە تۆ وەڵامی دوعاکانی من بوویت لەلایەن پەروەردگارەوە ئەزیزی من
+      ئەمەوێت پێت بڵێم کە تۆ چەنێک ماناداری بۆ من بۆ ژیانی من تۆ ئەزانی منت گۆڕی لە کچێکی گرینۆکەوە بۆ کچێکی دایم دەم بە خەندە و ڕووخۆش،لەکچێکی نائومێد و ڕەشبینە و منت گۆڕی بە کەسێکی ئەرێنی و متمانە بە خۆبوو..ئینجا باسی دڵ و دەرون و رووحم هەر ناکەم چەنێک لەو ڕەشییەت کرد بە پەمەیی نامەوێ زۆر باسی بکەم چونکە خۆت باش ئەزانیت لێرەیا ئەمەوێت بڵێم میهرەبانی تۆ و سەبر و خۆشەویستی تۆ چۆن کچێکی پچوکی  گۆری و لەگەڵ خۆیا بە جوانی گەورەی کرد😍ئەها بزانە بوونت چەند گرنگ بوو بۆ ژیانی من! سەفین خۆشەویستەکەم خەیاڵی زۆر جوانم هەیە لەگەڵ تۆیا هیوادارم بێنە دی و ئەکیدم پیاوێکی وەک تۆ ئەتوانێت هەموو خەون و ئاواتەکان و ویستەکانم بێنێتە دی  بۆ نموونە بچین بۆ سەیرانێکی بچووک و سەر لەسەر قاچم دانێی و تا خەو ئەتباتەوە،دوای تاجە گوڵینەم بۆ دروست بکە و لەسەرمی دا بنێ  دەستم بگرە و پیاسە ئەکەین بەلای هەر درەختێکدا تێپەڕین من ماچت ئەکەم باش؟! لەگەڵ تۆ ئەمەوێ  هەموو شارێکی ئەم کوردستانە ببینین سەردانی هەموو هەوارەکانی ئەم وڵاتە بچوکەمان بکەین و ئینجا هەموو شوێنێکی جوانی ئەم دنیایە ببینین و ئەزموون بکەین،ئەمەوێ تەمەنمان پڕ لە سەرکێشی و جوانی و. ئەزموونی جۆراوجۆر بەڕێ بکەین ئازیزەکەم.
+      ،کە سەیری چاوەکانت ئەکەم گەردوونی تیا ئەبینم چاوە قاوەییە مەستەکانت هەست بە میهرەبانی ئەکەم تیایاندا و لەگەڵ هەر سەیرکردنێکدا وشەکانی دڵتم پێ ئەڵێت چاوەکانت ئەفسوناوییە جادویەکی سەیری تێدایە کە من ڕێک قفڵ ئەکات و ڕادەستی خۆتم ئەکات،وردە خاڵەکانی سەر ڕوخسارت هەریەکەو جوانییەکی تایبەت بە خۆی هەڵگرتووە لە هەریەکەیانا ورد ئەبمەوە و سەیری ئەکەم پەیامێکی جوانی پێە لە ڕوحتەوە مەگەر ئەکرێ جگە لە من کەسی تر هەستی پێ بکات؟ نااا ئەو عاشقبوونەی من عاشقت بوومە هیچ ژنێک لەم دنیایەیا بەوشێوەیە عاشقی پیاوی خۆی نەبووە بۆیە هەست بە بچوکترین وردەکارییەکانی تۆ ئەکەم لە هەموو قسەکانت و مەبەستەکانی دڵت تێ ئەگەم بەبێ ئەوەی باسیشیان بکەی،،بۆیە من ئەڵێم بە ڕووح عاشقتم ئەی یارە جوانەکەی ڕەیە❤️ا
+      ،ئەمڕۆ  یەکەم ڕۆژی ژیانتە لە تەمەنی ٢٧ ساڵیدا پیرۆزە هیوادارم هەموو ڕۆژەکانی تەمەنت پڕ بێ لە جوانی و بەختەوەری و تەندروستییەکی باش خواگیان تۆ بهێڵێت بۆ من بۆ ئازیزانت ئەمەوێ پێت بڵێم نەک دوبارە هەزاربارە لەدایکبوونت لە خۆم و لە تۆش پیرۆز ئەکەم هاوسەرە شیرینەکەم ئەمەوێ پێت بڵێم زۆۆرم خۆشئەوێی زیاتر لە زۆر ئاشقی ڕوحە جوانە پاکەکەتم سەفینی دڵم❤️🌻ا. 
+    
+    </p>
+ 
+    <button onclick="nextSection('song')">دەستتم بدەرێ و وەرە لەگەڵم  شیرینم</button>
+  </section>
+
+
+  <!-- Special Song -->
+  <section id="song" class="section hidden">
+    <h2>بڵێ چی؟</h2>
+    <p>گوێ بگرە 🥰ا</p>
+    <audio id="our-song" controls>
+      <source src="voice.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio><br>
+    <button onclick="nextSection('final-surprise')">قوربانت بم وەرە لەگەڵم</button>
+  </section>
+
+  <!-- Final Surprise -->
+  <section id="final-surprise" class="section hidden">
+    <h2>ئەمەوێت پێت بڵێم من </h2>
+    <p>من بۆ ئەبەد لەتۆیا ڕژاوم و خۆم پێ کۆناکرێتەوە</p>
+    <button onclick="showSurprise()">لەکۆتایدا</button>
+    <div id="surprise-content" class="hidden">
+      <p> ئەڵێم زۆۆرم خۆشدەوێی ئازیزم</p>
+      <br>
+      <h2>25/2/2025</h2>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
